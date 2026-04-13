@@ -7,9 +7,7 @@ namespace BasicApp\SiteTheme\Cells;
 
 use CodeIgniter\View\Cells\Cell;
 
-abstract class BaseSiteButton extends Cell
+abstract class BaseSiteNavMenu extends Cell
 {
-    public $url;
-    
-    public $slot;
+    public $items = [];
 }

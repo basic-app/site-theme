@@ -13,11 +13,6 @@ class Site implements SiteThemeCell
 	{
         return view_cell('SiteLayout', $params);
     }
-	
-	public function page(array $params = []) : string
-	{
-        return view_cell('SitePage', $params);
-	}
 
 	public function header(array $params = []) : string
 	{
@@ -29,6 +24,11 @@ class Site implements SiteThemeCell
         return view_cell('SiteFooter', $params);
 	}
 
+    public function footerMenu(array $params = []) : string
+    {
+        return view_cell('SiteFooterMenu', $params);
+    }
+
     public function footerMenuItem(array $params = []) : string
     {
         return view_cell('SiteFooterMenuItem', $params);
@@ -39,8 +39,33 @@ class Site implements SiteThemeCell
         return view_cell('SiteNav', $params);
 	}
 
+    public function navMenu(array $params = []) : string
+    {
+        return view_cell('SiteNavMenu', $params);
+    }
+
+    public function navMenuItem(array $params = []) : string
+    {
+        return view_cell('SiteNavMenuItem', $params);
+    }
+
     public function card(array $params = []) : string
     {
         return view_cell('SiteCard', $params);
+    }
+
+    public function pager(array $params = []) : string
+    {
+        return view_cell('SitePager', $params);
+    }
+
+    public function posts(array $params = []) : string
+    {
+        return view_cell('SitePosts', $params);
+    }
+
+    public function postsItem(array $params = []) : string
+    {
+        return view_cell('SitePostsItem', $params);
     }
 } 
