@@ -9,9 +9,15 @@ use CodeIgniter\View\Cells\Cell;
 
 abstract class BaseSiteFooterMenuItem extends Cell
 {
-    public $url;
+    public $item_enabled;
 
-    public $icon;
+    public $item_url;
 
-    public $name;
+    public $item_name;
+
+    public $item_uid;
+
+    public $item_html_class;
+
+    public $item_active;
 }

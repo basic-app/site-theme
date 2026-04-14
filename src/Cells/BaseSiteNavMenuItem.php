@@ -9,7 +9,15 @@ use CodeIgniter\View\Cells\Cell;
 
 abstract class BaseSiteNavMenuItem extends Cell
 {
-    public $url;
+    public $item_enabled;
 
-    public $name;
+    public $item_url;
+
+    public $item_name;
+
+    public $item_uid;
+
+    public $item_html_class;
+
+    public $item_active;
 }
