@@ -14,4 +14,8 @@ abstract class BaseSiteHeader extends Cell
     public $description;
 
     public $backgroundUrl;
+
+    public function mount(): void
+    {
+    }
 }

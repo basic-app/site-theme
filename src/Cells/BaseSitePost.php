@@ -7,9 +7,15 @@ namespace BasicApp\SiteTheme\Cells;
 
 use CodeIgniter\View\Cells\Cell;
 
-abstract class BaseSiteCard extends Cell
+abstract class BaseSitePost extends Cell
 {
-    public $body;
+    public $title;
+    
+    public $description;
+    
+    public $text;
+    
+    public $created;
 
     public function mount(): void
     {

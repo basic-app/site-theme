@@ -10,4 +10,8 @@ use CodeIgniter\View\Cells\Cell;
 abstract class BaseSiteFooterMenu extends Cell
 {
     public $items = [];
+
+    public function mount(): void
+    {
+    }
 }

@@ -28,4 +28,8 @@ abstract class BaseSiteLayout extends Cell
     public $footer = [];
     
     public $nav = [];
+
+    public function mount(): void
+    {
+    }
 }

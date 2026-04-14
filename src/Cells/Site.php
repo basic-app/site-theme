@@ -59,6 +59,11 @@ class Site implements SiteThemeCell
         return view_cell('SitePager', $params);
     }
 
+    public function post(array $params = []) : string
+    {
+        return view_cell('SitePost', $params);
+    }
+
     public function posts(array $params = []) : string
     {
         return view_cell('SitePosts', $params);

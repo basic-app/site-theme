@@ -12,4 +12,8 @@ abstract class BaseSitePosts extends Cell
     public $posts = [];
 
     public $pager;
+
+    public function mount(): void
+    {
+    }
 }

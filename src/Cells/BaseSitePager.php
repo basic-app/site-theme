@@ -10,4 +10,8 @@ use CodeIgniter\View\Cells\Cell;
 abstract class BaseSitePager extends Cell
 {
     public $pager;
+
+    public function mount(): void
+    {
+    }
 }

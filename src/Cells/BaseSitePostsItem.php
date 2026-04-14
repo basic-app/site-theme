@@ -16,4 +16,8 @@ abstract class BaseSitePostsItem extends Cell
     public $description;
     
     public $created;
+
+    public function mount(): void
+    {
+    }
 }

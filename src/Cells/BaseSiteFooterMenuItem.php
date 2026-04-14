@@ -19,5 +19,7 @@ abstract class BaseSiteFooterMenuItem extends Cell
 
     public $item_html_class;
 
-    public $item_active;
+    public function mount(): void
+    {
+    }
 }

@@ -12,4 +12,8 @@ abstract class BaseSiteNav extends Cell
     public $title;
     
     public $menu = [];
+
+    public function mount(): void
+    {
+    }
 }
