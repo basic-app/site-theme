@@ -9,7 +9,7 @@ use CodeIgniter\View\Cells\Cell;
 
 abstract class BaseSiteFooterMenuItem extends Cell
 {
-    public $item_enabled;
+    public $item_enabled = 1;
 
     public $item_url;
 
