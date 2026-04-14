@@ -9,6 +9,8 @@ use CodeIgniter\View\Cells\Cell;
 
 abstract class BaseSitePostsItem extends Cell
 {
+    public $url;
+
     public $title;
     
     public $description;
