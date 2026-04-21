@@ -6,8 +6,9 @@
 namespace BasicApp\SiteTheme\Cells;
 
 use BasicApp\SiteTheme\Interfaces\SiteThemeCell;
+use BasicApp\Theme\Cells\Theme;
 
-class Site implements SiteThemeCell
+class Site extends Theme implements SiteThemeCell
 {
 	public function layout(array $params = []) : string
 	{
