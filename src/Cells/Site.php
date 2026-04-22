@@ -5,10 +5,10 @@
  */
 namespace BasicApp\SiteTheme\Cells;
 
-use BasicApp\SiteTheme\Interfaces\SiteThemeCell;
-use BasicApp\Theme\Cells\Theme;
+use BasicApp\Site\Interfaces\SiteThemeCell;
+use BasicApp\Theme\Cells\BaseTheme;
 
-class Site extends Theme implements SiteThemeCell
+class Site extends BaseTheme implements SiteThemeCell
 {
 	public function layout(array $params = []) : string
 	{
@@ -73,5 +73,152 @@ class Site extends Theme implements SiteThemeCell
     public function postsItem(array $params = []) : string
     {
         return view_cell('SitePostsItem', $params);
+    }
+
+    // Theme
+
+    public function formGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormGroup', $params);
+    }
+
+    public function formInput(array $params = []) : string
+    {
+        return view_cell('SiteFormInput', $params);
+    }
+
+    public function formInputGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormInputGroup', $params);
+    }
+
+    public function formPassword(array $params = []) : string
+    {
+        return view_cell('SiteFormPassword', $params);
+    }
+
+    public function formPasswordGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormPasswordGroup', $params);
+    }
+
+    public function formUpload(array $params = []) : string
+    {
+        return view_cell('SiteFormUpload', $params);
+    }
+
+    public function formUploadGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormUploadGroup', $params);
+    }
+
+    public function formTextarea(array $params = []) : string
+    {
+        return view_cell('SiteFormTextarea', $params);
+    }
+
+    public function formTextareaGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormTextareaGroup', $params);
+    }
+
+    public function formDropdown(array $params = []) : string
+    {
+        return view_cell('SiteFormDropdown', $params);
+    }
+
+    public function formDropdownGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormDropdownGroup', $params);
+    }
+
+    public function formMultiselect(array $params = []) : string
+    {
+        return view_cell('SiteFormMultiselect', $params);
+    }
+
+    public function formMultiselectGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormMultiselectGroup', $params);
+    }
+
+    public function formCheckbox(array $params = []) : string
+    {
+        return view_cell('SiteFormCheckbox', $params);
+    }
+
+    public function formCheckboxGroup(array $params = []) : string
+    {
+        return view_cell('SiteFormCheckboxGroup', $params);
+    }
+
+    public function formRadio(array $params = []) : string
+    {
+        return view_cell('SiteFormRadio', $params);
+    }
+
+    public function formLabel(array $params = []) : string
+    {
+        return view_cell('SiteFormLabel', $params);
+    }
+
+    public function formError(array $params = []) : string
+    {
+        return view_cell('SiteFormError', $params);
+    }
+
+    public function formSubmit(array $params = []) : string
+    {
+        return view_cell('SiteFormSubmit', $params);
+    }
+
+    public function formReset(array $params = []) : string
+    {
+        return view_cell('SiteFormReset', $params);
+    }
+
+    public function formButton(array $params = []) : string
+    {
+        return view_cell('SiteFormButton', $params);
+    }
+
+    public function alertPrimary(array $params = []) : string
+    {
+        return view_cell('SiteAlertPrimary', $params);
+    }
+
+    public function alertSecondary(array $params = []) : string
+    {
+        return view_cell('SiteAlertSecondary', $params);
+    }
+
+    public function alertSuccess(array $params = []) : string
+    {
+        return view_cell('SiteAlertSuccess', $params);
+    }
+
+    public function alertDanger(array $params = []) : string
+    {
+        return view_cell('SiteAlertDanger', $params);
+    }
+
+    public function alertWarning(array $params = []) : string
+    {
+        return view_cell('SiteAlertWarning', $params);
+    }
+
+    public function alertInfo(array $params = []) : string
+    {
+        return view_cell('SiteAlertInfo', $params);
+    }
+
+    public function alertLight(array $params = []) : string
+    {
+        return view_cell('SiteAlertLight', $params);
+    }
+
+    public function alertDark(array $params = []) : string
+    {
+        return view_cell('SiteAlertDark', $params);
     }
 } 
